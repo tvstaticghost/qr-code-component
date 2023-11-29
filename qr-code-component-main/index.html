@@ -10,19 +10,95 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Hind&family=Outfit&family=Quicksand:wght@500&family=Roboto&family=Space+Mono&display=swap');
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      background-color: hsl(212, 45%, 89%);
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .qr__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 18rem;
+      margin: 4rem auto;
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 10px;
+    }
+
+    .qr__wrapper > p {
+      text-align: center;
+    }
+
+    .qr__code {
+      max-width: 16rem;
+      min-width: 16rem;
+      border-radius: 10px;
+    }
+
+    .main__para {
+      margin: 1rem 1.5rem;
+      font-weight: 700;
+    }
+
+    .sub__para {
+      font-size: 15px;
+      color: hsl(220, 15%, 55%);
+      margin: 0 1.5rem;
+    }
+
+    @media (max-width: 375px) {
+
+    .qr__wrapper {
+      
+      width: 21rem;
+      margin: 4rem auto;
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 10px;
+    }
+
+    .qr__wrapper > p {
+      text-align: center;
+    }
+
+    .qr__code {
+      max-width: 16rem;
+      min-width: 16rem;
+      border-radius: 10px;
+    }
+
+    .main__para {
+      margin: 1rem 1.5rem;
+      font-weight: 700;
+    }
+
+    .sub__para {
+      font-size: 15px;
+      color: hsl(220, 15%, 55%);
+      margin: 0 1.5rem;
+    }
+    }
   </style>
 </head>
 <body>
+  <div class="qr__wrapper">
+    <img src="images/image-qr-code.png" alt="qr" class="qr__code">
 
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+    <p class="main__para">Improve your front-end skills by building projects</p>
+    <p class="sub__para">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/tvstaticghost/qr-code-component/tree/main/qr-code-component-main">Ray Arnold</a>.
   </div>
 </body>
 </html>
